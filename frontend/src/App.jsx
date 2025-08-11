@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 import IMonitorSoftPage from "./pages/IMonitorSoftPage";
-import OsMonitorPage from "./pages/osMonitorPage";
+import OsMonitorPage from "./pages/OsMonitorPage";
 import StaffCopPage from "./pages/StaffCopPage";
 import Blog from "./pages/Blog";
 import PostDetail from "./pages/PostDetail";
