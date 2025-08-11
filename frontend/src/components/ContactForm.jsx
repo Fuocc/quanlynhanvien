@@ -19,7 +19,9 @@ export default function ContactForm() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post("http://localhost:3001/api/contact", formData);
+            const apiUrl = import.meta.env.VITE_API_URL;
+            await axios.post(`${apiUrl}/api/contact`, formData);
+
             alert("Gửi thành công!");
         } catch (error) {
             console.error(error);
