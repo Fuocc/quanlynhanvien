@@ -1,5 +1,4 @@
 import { assets, osmonitorSlides } from "../assets/assets";
-import Cards from "../components/Cards";
 import ContactForm from "../components/ContactForm";
 import ImageSlider from "../components/ImageSlider";
 import OtherSolutions from "../components/OtherSolutions";
@@ -14,7 +13,7 @@ export default function OsMonitorPage() {
                     className="relative lg:w-max flex flex-col items-center gap-6 content-width bg-cover"
                     style={{ backgroundImage: `url(${assets.heroDecor})` }}
                 >
-                    <Tag isFilled>StaffCop Enterprise</Tag>
+                    <Tag isFilled>OsMonitor</Tag>
                     <h1 className="max-w-225 color-black font-medium lg:text-[64px] leading-[1.3em] text-center md:text-[48px] text-[36px]">
                         Giải pháp quản lý OsMonitor
                     </h1>
