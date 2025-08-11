@@ -20,8 +20,11 @@ export default function ContactForm() {
         e.preventDefault();
         try {
             const apiUrl = import.meta.env.VITE_API_URL;
-            await axios.post(`${apiUrl}/api/contact`, formData);
-
+            await axios.post(`${apiUrl}/api/contact`, formData, {
+                headers: {
+                    "Content-Type": "application/json",
+                },
+            });
             alert("Gửi thành công!");
         } catch (error) {
             console.error(error);
