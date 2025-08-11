@@ -5,7 +5,7 @@ const cors = require("cors");
 const nodemailer = require("nodemailer");
 
 const app = express();
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 app.use(cors());
 app.use(express.json());
@@ -26,12 +26,12 @@ app.post("/api/contact", async (req, res) => {
         to: "dangthienphuoc24@gmail.com",
         subject: `Yêu cầu liên hệ từ ${firstName} ${lastName}`,
         text: `
-      Họ tên: ${lastName} ${firstName}
-      Email: ${email}
-      SĐT: ${phone}
-      Số lượng license: ${licenses}
-      Lời nhắn: ${message}
-    `,
+        Họ tên: ${lastName} ${firstName}
+        Email: ${email}
+        SĐT: ${phone}
+        Số lượng license: ${licenses}
+        Lời nhắn: ${message}
+        `,
     };
 
     try {
@@ -44,5 +44,5 @@ app.post("/api/contact", async (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`Server đang chạy tại http://localhost:${PORT}`);
+    console.log(`✅ Server đang chạy tại http://localhost:${PORT}`);
 });
