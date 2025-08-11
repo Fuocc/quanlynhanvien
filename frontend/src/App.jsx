@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 import IMonitorSoftPage from "./pages/IMonitorSoftPage";
-import OsMonitorPage from "./pages/OsMonitorPage";
+import MonitorPage from "./pages/MonitorPage";
 import StaffCopPage from "./pages/StaffCopPage";
 import Blog from "./pages/Blog";
 import PostDetail from "./pages/PostDetail";
@@ -18,7 +18,7 @@ function App() {
                 <Route path="/lien-he" element={<Contact />} />
                 <Route
                     path="/giai-phap-giam-sat-trung-quoc"
-                    element={<OsMonitorPage />}
+                    element={<MonitorPage />}
                 />
                 <Route
                     path="/giai-phap-giam-sat-my"

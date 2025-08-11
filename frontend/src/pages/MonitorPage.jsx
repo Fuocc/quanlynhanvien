@@ -4,7 +4,7 @@ import ImageSlider from "../components/ImageSlider";
 import OtherSolutions from "../components/OtherSolutions";
 import Tag from "../components/Tag";
 
-export default function OsMonitorPage() {
+export default function MonitorPage() {
     return (
         <>
             {/* Hero */}
