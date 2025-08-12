@@ -20,7 +20,7 @@ export default function Footer() {
                                     className="max-w-5"
                                 />
                                 <Link
-                                    href="mailto:sales@quanlynhanvien.com"
+                                    to="mailto:sales@quanlynhanvien.com"
                                     className="text-sm leading-[1.6em] text-[#6B7280] transition hover:text-[#1f2937] hover:underline"
                                 >
                                     Sales@quanlynhanvien.com
@@ -104,19 +104,19 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="pt-8 border-t border-t-[#1F2937]/15 flex flex-col-reverse gap-8 center-between lg:flex-row">
-                    <p className="text-[#6B7280] text-sm text-center transition hover:text-[#1F2937]">
+                    <p className="text-[#6B7280] text-sm text-center">
                         Bản quyền thuộc về Công ty TNHH giải pháp Công nghệ
                         thông tin Win
                     </p>
                     <div className="flex gap-8 items-center">
                         <Link
-                            to="/chinh-sach"
+                            to="https://quanlynhanvien.com/chinh-sach-bao-mat/"
                             className="text-[#6B7280] text-sm transition hover:text-[#1F2937] hover:underline"
                         >
                             Chính sách bảo mật
                         </Link>
                         <Link
-                            to="/dieu-khoan"
+                            to="https://quanlynhanvien.com/dieu-khoan-su-dung/"
                             className="text-[#6B7280] text-sm transition hover:text-[#1F2937] hover:underline"
                         >
                             Điều khoản sử dụng
