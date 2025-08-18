@@ -122,7 +122,7 @@ export default function Nav() {
                                 : "-translate-y-full"
                         }`}
                     >
-                        <div className="p-8 flex flex-col h-full gap-16">
+                        <div className="p-8 flex flex-col h-full gap-16 bg-white">
                             <ul className="flex flex-col gap-12 text-xl font-medium color-black">
                                 {navLinks.map((link) => (
                                     <li key={link.name}>

@@ -2,7 +2,6 @@ import { assets, featuredImages, cards, solutions } from "../assets/assets";
 import Button from "../components/Button";
 import Cards from "../components/Cards";
 import ContactForm from "../components/ContactForm";
-import Footer from "../components/Footer";
 import Tag from "../components/Tag";
 
 export default function Home() {
