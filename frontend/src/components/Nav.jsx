@@ -21,9 +21,9 @@ export default function Nav() {
     }, []);
 
     return (
-        <nav className="bg-white border-b border-b-[rgba(0,0,0,0.15)] sticky top-0 left-0 z-100">
+        <nav className="bg-white border-b border-b-[rgba(0,0,0,0.15)] sticky top-0 left-0 z-40">
             <div className="center-between content-width lg:px-[6%] lg:py-6">
-                <div className="relative z-100  max-lg:px-[6%] max-lg:py-6 max-lg:min-h-[92px] flex items-center justify-between w-full lg:w-auto lg:gap-20 bg-white max-md:border-b border-b-[rgba(0,0,0,0.15)]">
+                <div className="relative z-40  max-lg:px-[6%] max-lg:py-6 max-lg:min-h-[92px] flex items-center justify-between w-full lg:w-auto lg:gap-20 bg-white max-md:border-b border-b-[rgba(0,0,0,0.15)]">
                     <a href="/">
                         <img
                             src={assets.logo}
@@ -116,7 +116,7 @@ export default function Nav() {
                     }`}
                 >
                     <div
-                        className={`fixed inset-0 h-max w-screen bg-white shadow-lg transform transition-transform duration-300 z-30 pb-8 ${
+                        className={`fixed inset-0 h-[100dvh] w-screen bg-white shadow-lg transform transition-transform duration-300 z-30 pb-8 ${
                             mobileMenuOpen
                                 ? "translate-y-[92px]"
                                 : "-translate-y-full"
